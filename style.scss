@@ -1,0 +1,18 @@
+/** {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}*/
+
+#footerIcon {
+  filter: invert(1);
+}
+
+#mainOrganization {
+  background-color: #414246;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
