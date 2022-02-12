@@ -4,114 +4,168 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/bd800fb8b4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="all and (min-width: 768px)"
+      href="style768.css"
+    />
+    <!-- Font families links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome icons-->
+    <script
+      src="https://kit.fontawesome.com/bd800fb8b4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
+
   <body>
-    <nav id="nav"></nav>
+    <img id="menuIcon" src="images/menuIcon.svg" alt="Menu icon" />
+
+    <nav id="nav" class="notVisible">
       <span id="pageInfo">
-        <a id="infoFacebookLogoLink" href=""><i id="infoFacebookLogo class="fa-brands fa-facebook-f"></i></a>
-        <a id="infoTwiterLogoLink" href=""><i id="infoTwiterLogo class="fa-brands fa-twitter"></i></a>
+        <a id="infoFacebookLogoLink" href=""
+          ><i id="infoFacebookLogo" class="fab fa-facebook-f"></i
+        ></a>
+        <a id="infoTwiterLogoLink" href=""
+          ><i id="infoTwiterLogo" class="fab fa-twitter"></i
+        ></a>
         <a href="infoLanguage">English</a>
         <a href="infoMyPage">My Page</a>
         <a href="infoLogOut">Logout</a>
       </span>
-      
-      <span id="desktopMenu">  
-        <img id="navLogo" src="images/pageLogo.svg" alt="" />
-        <a id="navAbout" href="About"></a>
+
+      <span id="desktopMenu">
+        <a href="index.html"
+          ><img id="navLogo" src="images/pageLogo.svg" alt="" class="logo"
+        /></a>
+        <a id="navAbout" href="aboutPage.html" target="_blank">About</a>
         <a id="navProgram" href="">Program</a>
         <a id="navJoin" href="">Join</a>
         <a id="navSponsor" href="">Sponsor</a>
         <a id="navNews" href="">News</a>
         <a id="navCCCamping" href="">CC Camping</a>
       </span>
-
-      <img id="mobileMenuImage" src="" alt="">
-
-      <span id="mobileMenu">  
-        <img id="mobileNavLogo" src="images/pageLogo.svg" alt="" />
-        <a id="mobileNavAbout" href="About"></a>
-        <a id="mobileNavProgram" href="">Program</a>
-        <a id="mobileNavJoin" href="">Join</a>
-        <a id="mobileNavSponsor" href="">Sponsor</a>
-        <a id="mobileNavNews" href="">News</a>
-        <a id="mobileNavCCCamping" href="">CC Camping</a>
-      </span>
     </nav>
 
     <header id="header">
       <h2 id="headerMainH2">"There is another way to learn"</h2>
       <h1 id="headerH1">DIDACTIC ELECTRONICS LEARNING PROGRAM</h1>
-      <p id="headerText1">An enjoyable didactic program, created for you to learn the electronic sciences while playing with fun dynamics.</p>
+      <p id="headerText1">
+        An enjoyable didactic program, created for you to learn the electronic
+        sciences while playing with fun dynamics.
+      </p>
       <h2 id="headerH2">Available 24/7 for you</h2>
       <p id="headerText2">Global coverage</p>
     </header>
 
     <main id="main">
-      <section id="mainSelector">
-        <h2 id="mainTittle"></h2>
-        <div id="mainUnderscore"></div>
-        <article id="mainContainer">
-          <section id="mainCardOne"></section>
-          <section id="mainCardTwo"></section>
-          <section id="mainCardThree"></section>
-          <section id="mainCardFour"></section>
-          <section id="mainCardFive"></section>
-          <a href="" id="mainAnchor"></a>
+      <section id="mainSelector" class="flexColumn">
+        <h2 id="mainTittle" class="whiteTittle">Main Program</h2>
+        <div id="mainUnderscore" class="underscore"></div>
+        <article id="mainContainer" class="flexColumn">
+          <section id="mainCardOne" class="mainCard">
+            <img src="images/firstMainCardIcon.png" alt="" class="center" />
+            <h2 class="center">Lecture</h2>
+            <p class="center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </section>
+          <section id="mainCardTwo" class="mainCard">
+            <img src="images/secondMainCardIcon.png" alt="" class="center" />
+            <h2 class="center">CC excibition</h2>
+            <p class="center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </section>
+
+          <section id="mainCardThree" class="mainCard">
+            <img src="images/thirdMainCardIcon.png" alt="" class="center" />
+            <h2 class="center">Forum</h2>
+            <p class="center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </section>
+          <section id="mainCardFour" class="mainCard">
+            <img src="images/fourthMainCardIcon.png" alt="x" class="center" />
+            <h2 class="center">Workshop</h2>
+            <p class="center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </section>
+          <section id="mainCardFive" class="mainCard">
+            <img src="images/fifthMainCardIcon.png" alt="" class="center" />
+            <h2 class="center">CC ignite</h2>
+            <p class="center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </section>
         </article>
+        <a href="#" id="mainAnchor" class="flexColumn"
+          >Join now to the course</a
+        >
       </section>
 
-      
-      <section id="featuredContainer">
+      <section id="featuredContainer" class="notVisible">
         <h2 id="featuredTittle"></h2>
-        <div id="featuredUnderscore"></div>
+        <div id="featuredUnderscore" class="underscore"></div>
         <article id="featuredCardsContainer">
           <section id="featuredSectionOne">
-              <img src="#" alt="" id="featuredImageOne" />
-              <h2 id="featuredTittleOne"></h2>
-              <h3 id="featuredSubtittleOne"></h3>
-              <p id="featuredParagraphOne"></p>
-            </section>
-            <section id="featuredSectionTwo">
-              <img src="#" alt="" id="featuredImageTwo" />
-              <h2 id="featuredTittleTwo"></h2>
-              <h3 id="featuredSubtittleTwo"></h3>
-              <p id="featuredParagraphTwo"></p>
-            </section>
-            <section id="featuredSectionThree">
-              <img src="#" alt="" id="featuredImageThree" />
-              <h2 id="featuredTittleThree"></h2>
-              <h3 id="featuredSubtittleThree"></h3>
-              <p id="featuredParagraphThree"></p>
-            </section>
-            <section id="featuredSectionFour">
-              <img src="#" alt="" id="featuredImageFour" />
-              <h2 id="featuredTittleFour"></h2>
-              <h3 id="featuredSubtittleFour"></h3>
-              <p id="featuredParagraphFour"></p>
-            </section>
-            <section id="featuredSectionFive">
-              <img src="#" alt="" id="featuredImageFive" />
-              <h2 id="featuredTittleFive"></h2>
-              <h3 id="featuredSubtittleFive"></h3>
-              <p id="featuredParagraphFive"></p>
-            </section>
-            <section id="featuredSectionSix">
-              <img src="#" alt="" id="featuredImageSix" />
+            <img src="#" alt="" id="featuredImageOne" />
+            <h2 id="featuredTittleOne"></h2>
+            <h3 id="featuredSubtittleOne"></h3>
+            <p id="featuredParagraphOne"></p>
+          </section>
+          <section id="featuredSectionTwo">
+            <img src="#" alt="" id="featuredImageTwo" />
+            <h2 id="featuredTittleTwo"></h2>
+            <h3 id="featuredSubtittleTwo"></h3>
+            <p id="featuredParagraphTwo"></p>
+          </section>
+          <section id="featuredSectionThree">
+            <img src="#" alt="" id="featuredImageThree" />
+            <h2 id="featuredTittleThree"></h2>
+            <h3 id="featuredSubtittleThree"></h3>
+            <p id="featuredParagraphThree"></p>
+          </section>
+          <section id="featuredSectionFour">
+            <img src="#" alt="" id="featuredImageFour" />
+            <h2 id="featuredTittleFour"></h2>
+            <h3 id="featuredSubtittleFour"></h3>
+            <p id="featuredParagraphFour"></p>
+          </section>
+          <section id="featuredSectionFive">
+            <img src="#" alt="" id="featuredImageFive" />
+            <h2 id="featuredTittleFive"></h2>
+            <h3 id="featuredSubtittleFive"></h3>
+            <p id="featuredParagraphFive"></p>
+          </section>
+          <section id="featuredSectionSix">
+            <img src="#" alt="" id="featuredImageSix" />
             <h2 id="featuredTittleSix"></h2>
             <h3 id="featuredSubtittleSix"></h3>
             <p id="featuredParagraphSix"></p>
-            </section>
+          </section>
         </article>
-      </section>  
+      </section>
     </main>
 
     <footer id="footer">
-      <article id="partners">
-        <h2 id="partnersTittle">Partner</h2>
-        <div id="partnersUnderscore"></div>
+      <article id="partners" class="flexColumn">
+        <h2 id="partnersTittle" class="whiteTittle">Partners</h2>
+        <div id="partnersUnderscore" class="underscore"></div>
         <section id="partnersContainer">
           <p id="kyp">kyp Electronics</p>
           <p id="google">google</p>
@@ -121,12 +175,17 @@
         </section>
       </article>
       <article id="mainOrganization">
-        <img id="footerIcon" src="images/pageLogo.svg" alt="">
-        <div>
-          <h2 id="mainOrganizationTittle">Didactic Electronics Colombia. All rights reserved</h2>
-          <p>The Didactic electronics program has been created with the help of thousands of students like you that are interested in this marvelous world of knowledge</p>
+        <img id="footerIcon" src="images/pageLogo.svg" alt="c" class="logo" />
+        <div id="mainOrganizationDiv">
+          <h2 id="mainOrganizationTittle">
+            Didactic Electronics Colombia. All rights reserved
+          </h2>
+          <p id="mainOrganizationText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
         </div>
       </article>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

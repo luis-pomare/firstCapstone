@@ -4,77 +4,123 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/bd800fb8b4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="all and (min-width: 768px)"
+      href="style768.css"
+    />
+    <!-- Font families links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome icons-->
+    <script
+      src="https://kit.fontawesome.com/bd800fb8b4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
+
   <body>
-    <nav id="nav"></nav>
+    <img id="menuIcon" src="images/menuIcon.svg" alt="Menu icon" />
+
+    <nav id="nav" class="notVisible">
       <span id="pageInfo">
-        <a id="infoFacebookLogoLink" href=""><i id="infoFacebookLogo class="fa-brands fa-facebook-f"></i></a>
-        <a id="infoTwiterLogoLink" href=""><i id="infoTwiterLogo class="fa-brands fa-twitter"></i></a>
+        <a id="infoFacebookLogoLink" href=""
+          ><i id="infoFacebookLogo" class="fab fa-facebook-f"></i
+        ></a>
+        <a id="infoTwiterLogoLink" href=""
+          ><i id="infoTwiterLogo" class="fab fa-twitter"></i
+        ></a>
         <a href="infoLanguage">English</a>
         <a href="infoMyPage">My Page</a>
         <a href="infoLogOut">Logout</a>
       </span>
-      
-      <span id="desktopMenu">  
-        <img id="navLogo" src="images/pageLogo.svg" alt="" />
-        <a id="navAbout" href="About"></a>
-        <a id="navProgram" href="">Program</a>
+
+      <span id="desktopMenu">
+        <a href="index.html"
+          ><img id="navLogo" src="images/pageLogo.svg" alt="" class="logo"
+        /></a>
+        <a id="navAbout" href="aboutPage.html" target="_blank">About</a>
+        <a id="navProgram" href="index.html">Program</a>
         <a id="navJoin" href="">Join</a>
         <a id="navSponsor" href="">Sponsor</a>
         <a id="navNews" href="">News</a>
         <a id="navCCCamping" href="">CC Camping</a>
-      </span>
-
-      <img id="mobileMenuImage" src="" alt="">
-
-      <span id="mobileMenu">  
-        <img id="mobileNavLogo" src="images/pageLogo.svg" alt="" />
-        <a id="mobileNavAbout" href="About"></a>
-        <a id="mobileNavProgram" href="">Program</a>
-        <a id="mobileNavJoin" href="">Join</a>
-        <a id="mobileNavSponsor" href="">Sponsor</a>
-        <a id="mobileNavNews" href="">News</a>
-        <a id="mobileNavCCCamping" href="">CC Camping</a>
       </span>
     </nav>
 
     <header id="header">
       <h2 id="headerMainH2">"There is another way to learn"</h2>
       <h1 id="headerH1">DIDACTIC ELECTRONICS LEARNING PROGRAM</h1>
-      <p id="headerText1">An enjoyable didactic program, created for you to learn the electronic sciences while playing with fun dynamics.</p>
-      <p id="headerText2">Please contact us per email for any further questions about didactic electronics</p>
-      <a href="https://github.com/luis-pomare?tab=repositories">luispomare92@gmail.com</a>
+      <p id="aboutHeaderText1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <p id="headerText2">
+        Please contact us per email for any further questions about didactic
+        electronics
+        <br /><b> luispomare92@gmail.com</b>
+      </p>
     </header>
 
-    <main id="main">
-      <h2 id="mainTittleOne">Didactic Electronics contribution</h2>
-      <div id="mainUnderscoreOne"></div>
-      <p id="mainParagraphOne">The Didactic electronics program has been created with the help of thousands of students like you that are interested in this marvelous world of knowledge.</p>
+    <main id="aboutMain" class="flexColumn">
+      <h2 id="mainTittleOne" class="aboutMainTittles">
+        Didactic Electronics <br />
+        contribution
+      </h2>
+      <div id="mainUnderscoreOne" class="underscore"></div>
+      <p id="mainParagraphOne">
+        The Didactic electronics program has been created with the help of
+        thousands of students like you that are interested in this marvelous
+        world of knowledge.
+      </p>
       <img src="images/pageLogo.svg" alt="" id="mainLogo" />
-      
-      <hr>
 
-      <h2 id="mainTittleTwo">See success stories/h2>
-      <div id="mainUnderscoreTwo"></div>
-      <p id="mainParagraphTwo">Take a look at testimonials from people who went through the program and how it positively impacted their lives.</p>
-      <section id="projectOne">
-        <h2 id="projectOneTittle">Arduino Project</h2>
-        <p id="projectOneParagraph">An electronic automatic alcohol dispenser to fight the pandemic with technology</p>
-      </section>
-      <section id="projectTwo">
-        <h2 id="projectTwoTittle">Procesing project</h2>
-        <p id="projectTwoParagraph">A system that controls the functionality of a bottle-making machine.</p>
-      </section>
-    
+      <hr />
+
+      <h2 id="mainTittleTwo">See success stories</h2>
+      <div id="mainUnderscoreTwo" class="underscore"></div>
+      <p id="mainParagraphTwo">
+        Take a look at testimonials from people who went through the program and
+        how it positively impacted their lives.
+      </p>
+      <div id="images">
+        <section id="projectOne" class="flexColumn">
+          <h2 id="projectOneTittle">Arduino Project</h2>
+          <p id="projectOneParagraph">
+            An electronic automatic alcohol dispenser to fight the pandemic with
+            technology
+          </p>
+        </section>
+        <section id="projectTwo" class="flexColumn">
+          <h2 id="projectTwoTittle">Procesing project</h2>
+          <p id="projectTwoParagraph">
+            A system that controls the functionality of a bottle-making machine.
+          </p>
+        </section>
+      </div>
     </main>
 
     <footer id="footer">
-      <article id="partners">
-        <h2 id="partnersTittle">Partner</h2>
-        <div id="partnersUnderscore"></div>
+      <article id="partners" class="flexColumn">
+        <h2 id="partnersTittle" class="whiteTittle">Partners</h2>
+        <div id="partnersUnderscore" class="underscore"></div>
         <section id="partnersContainer">
           <p id="kyp">kyp Electronics</p>
           <p id="google">google</p>
@@ -84,12 +130,17 @@
         </section>
       </article>
       <article id="mainOrganization">
-        <img id="footerIcon" src="images/pageLogo.svg" alt="">
-        <div>
-          <h2 id="mainOrganizationTittle">Didactic Electronics Colombia. All rights reserved</h2>
-          <p>The Didactic electronics program has been created with the help of thousands of students like you that are interested in this marvelous world of knowledge</p>
+        <img id="footerIcon" src="images/pageLogo.svg" alt="c" class="logo" />
+        <div id="mainOrganizationDiv">
+          <h2 id="mainOrganizationTittle">
+            Didactic Electronics Colombia. All rights reserved
+          </h2>
+          <p id="mainOrganizationText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
         </div>
       </article>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
