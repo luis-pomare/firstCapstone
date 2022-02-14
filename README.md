@@ -16,14 +16,6 @@ This is a website composed of two web pages (index.html and about page) that tal
 
 ## Authors
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## Authors
-
 👤 **Luis pomare**
 
 - GitHub: [@luis-pomare](https://github.com/luis-pomare)
