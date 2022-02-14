@@ -73,3 +73,13 @@ body {
   display: flex;
   gap: 20px;
 }
+
+#featuredCardsContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 35px;
+}
+
+#images {
+  flex-direction: row;
+}

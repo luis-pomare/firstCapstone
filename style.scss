@@ -65,6 +65,7 @@ body {
     margin-bottom: 20px;
     font-size: 0.75em;
     line-height: 1.7em;
+    max-width: 500px;
   }
   #headerH2 {
     color: #565861;
@@ -75,7 +76,6 @@ body {
     color: #565861;
     font-weight: 400;
     font-size: 0.8em;
-    text-align: center;
   }
 }
 
@@ -254,6 +254,37 @@ body {
     color: #ffffff;
     p {
       color: #ffffff;
+    }
+  }
+}
+
+#featuredContainer {
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+}
+
+#featuredCardsContainer {
+  margin-top: 30px;
+  gap: 20px;
+  section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    h2 {
+      font-weight: 800;
+      font-size: 1.2em;
+      color: $color2;
+    }
+    h3 {
+      font-size: 0.8em;
+      color: $color3;
+      font-weight: 600;
+      font-style: italic;
+    }
+    p {
+      font-size: 0.77em;
+      font-weight: 400;
+      font-style: italic;
     }
   }
 }

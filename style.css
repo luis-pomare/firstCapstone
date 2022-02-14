@@ -78,6 +78,7 @@ body {
   margin-bottom: 20px;
   font-size: 0.75em;
   line-height: 1.7em;
+  max-width: 500px;
 }
 
 #header #headerH2 {
@@ -90,7 +91,6 @@ body {
   color: #565861;
   font-weight: 400;
   font-size: 0.8em;
-  text-align: center;
 }
 
 #mainSelector {
@@ -318,5 +318,44 @@ body {
 
 #aboutMain #projectTwo p {
   color: #ffffff;
+}
+
+#featuredContainer {
+  padding: 25px 15px 25px 15px;
+  background-color: white;
+}
+
+#featuredCardsContainer {
+  margin-top: 30px;
+  gap: 20px;
+}
+
+#featuredCardsContainer section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+#featuredCardsContainer section h2 {
+  font-weight: 800;
+  font-size: 1.2em;
+  color: #272a31;
+}
+
+#featuredCardsContainer section h3 {
+  font-size: 0.8em;
+  color: #ec5242;
+  font-weight: 600;
+  font-style: italic;
+}
+
+#featuredCardsContainer section p {
+  font-size: 0.77em;
+  font-weight: 400;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */

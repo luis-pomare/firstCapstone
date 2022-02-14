@@ -103,4 +103,19 @@ body {
   display: flex;
   gap: 20px;
 }
+
+#featuredCardsContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin-bottom: 35px;
+}
+
+#images {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 /*# sourceMappingURL=style768.css.map */
