@@ -1,16 +1,27 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Lato", sans-serif;
+}
+
+#aboutMain p {
+  font-size: 0.8em;
+  color: #414246;
+}
+
+#featuredCardsContainer section p {
+  font-size: 0.77em;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .logo {
   width: 100px;
   height: 50px;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 body {
@@ -23,18 +34,17 @@ body {
 
 .flexColumn {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 15px;
 }
 
@@ -43,15 +53,15 @@ body {
 }
 
 #menuIcon {
-  margin: 15px 0px 40px 20px;
+  margin: 15px 0 40px 20px;
   width: 35px;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   cursor: pointer;
 }
 
 #header {
-  padding: 0px 13px 0px 13px;
+  padding: 0 13px 0 13px;
 }
 
 #header #headerMainH2 {
@@ -74,7 +84,7 @@ body {
   background-color: #f5f5f5;
   padding: 15px;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   margin-bottom: 20px;
   font-size: 0.75em;
   line-height: 1.7em;
@@ -106,22 +116,22 @@ body {
   font-size: medium;
 }
 
-#mainSelector .whiteTittle {
-  font-family: "lato", sans-serif;
-  font-size: large;
-  color: white;
+#mainSelector #mainTittle {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 #mainSelector .mainCard {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  grid-template-rows: auto;
   -ms-grid-columns: 2fr 2fr 6fr;
-      grid-template-columns: 2fr 2fr 6fr;
+  grid-template-columns: 2fr 2fr 6fr;
   gap: 20px;
   padding: 15px;
   background-color: rgba(65, 66, 70, 0.7);
@@ -150,14 +160,21 @@ body {
   background-color: #414246;
 }
 
+#partners h2 {
+  font-weight: 400;
+  font-size: 20px;
+  padding-top: 30px;
+  color: white;
+  opacity: 0.6;
+}
+
 #partners #partnersContainer {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 80%;
 }
 
@@ -170,11 +187,10 @@ body {
 
 #partners #partnersContainer #kyp {
   font-weight: 900;
-  color: #ffffff;
+  color: #fff;
 }
 
 #partners #partnersContainer #google {
-  font-family: "lato";
   font-weight: 400;
 }
 
@@ -191,24 +207,18 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  grid-template-rows: auto;
   -ms-grid-columns: 4fr 6fr;
-      grid-template-columns: 4fr 6fr;
+  grid-template-columns: 4fr 6fr;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #414246;
   padding: 15px;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   margin-bottom: 20px;
   font-size: 0.5em;
-}
-
-.whiteTittle {
-  font-family: "lato", sans-serif;
-  font-size: large;
-  color: white;
 }
 
 .underscore {
@@ -219,12 +229,11 @@ body {
 /* Dynamic elements style */
 #dynamicNav {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -232,8 +241,8 @@ body {
   height: 100vh;
   background-image: url("images/bodyBackground.png");
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 2;
   color: #414246;
   font-size: 32px;
@@ -249,24 +258,24 @@ body {
 
 #closerIcon {
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   width: 25px;
   margin: 15px 15px 0 0;
   cursor: pointer;
 }
 
-/*  About page*/
+/*  About page */
 #aboutHeaderText1 {
   color: #414246;
   background-color: white;
   padding: 15px;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   margin-bottom: 20px;
   font-size: 0.75em;
   line-height: 1.7em;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 #aboutMain {
@@ -281,26 +290,22 @@ body {
   font-weight: 400;
 }
 
-#aboutMain p {
-  font-size: 0.8em;
-  color: #414246;
-}
-
 #aboutMain #projectOne {
   width: 300px;
   height: 200px;
-  background-image: url("images/aboutImageOne.svg");
+  background-image: url("images/aboutImageOne.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 15px;
-  color: #ffffff;
+  color: #fff;
 }
 
 #aboutMain #projectOne p {
-  color: #ffffff;
+  color: #fff;
 }
 
 #aboutMain #projectTwo {
@@ -310,14 +315,14 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 15px;
-  color: #ffffff;
+  color: #fff;
 }
 
 #aboutMain #projectTwo p {
-  color: #ffffff;
+  color: #fff;
 }
 
 #featuredContainer {
@@ -332,11 +337,10 @@ body {
 
 #featuredCardsContainer section {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 5px;
 }
 
@@ -352,10 +356,3 @@ body {
   font-weight: 600;
   font-style: italic;
 }
-
-#featuredCardsContainer section p {
-  font-size: 0.77em;
-  font-weight: 400;
-  font-style: italic;
-}
-/*# sourceMappingURL=style.css.map */

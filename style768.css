@@ -1,31 +1,31 @@
 body {
-  background-position-y: 0px;
+  background-position-y: 0;
 }
 
 #mainContainer {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 7px;
 }
 
 #mainSelector .mainCard {
   -ms-grid-rows: auto auto auto;
   -ms-grid-columns: auto;
-      grid-template: auto auto auto/ auto;
+  grid-template: auto auto auto/ auto;
   gap: 10px;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
 }
 
 #mainSelector .center {
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   text-align: center;
 }
 
@@ -35,24 +35,22 @@ body {
 
 #nav {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 100px;
 }
 
 #nav #pageInfo {
   background-color: #414246;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-right: 100px;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 #nav #pageInfo a {
@@ -63,18 +61,15 @@ body {
 
 #nav #desktopMenu {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   padding-top: 12px;
   padding-bottom: 12px;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: space-evenly;
   background-color: white;
   padding-right: 50px;
 }
@@ -93,29 +88,24 @@ body {
 #nav #desktopMenu #navCCCamping {
   border: 5px solid #ec5242;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   padding: 7px;
 }
 
 #images {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 #featuredCardsContainer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
   margin-bottom: 35px;
 }
-
-#images {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-/*# sourceMappingURL=style768.css.map */
