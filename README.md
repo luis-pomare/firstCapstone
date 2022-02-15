@@ -1,5 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+## Preview images
+
+![screenshot of the page](images/appScreenShotOne.png)
+
+![screenshot of the page](images/appScreenShotTwo.png)
+
+![screenshot of the page](images/appScreenShotThree.png)
+
 # Electronics didactic course
 
 This is a website composed of two web pages (index.html and about page) that talks about a fictitious electronics course and is made with the aim of showing my developer skills.

@@ -61,21 +61,39 @@ body {
 }
 
 #header {
-  padding: 0 13px 0 13px;
+  padding: 0px 13px 0 13px;
 }
 
 #header #headerMainH2 {
   color: #ec5242;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.3em;
 }
 
-#header h1 {
+#header #headerH1 {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   color: #dc4232;
   line-height: 30px;
-  padding-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 55px;
+  font-size: 35px;
+  background-image: url("../images/textBackground.png");
+  background-position-y: -450px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 40px;
+}
+
+#header #aboutHeaderTittle {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: #dc4232;
+  line-height: 30px;
+  padding-top: 17px;
+  padding-bottom: 55px;
+  font-size: 35px;
+  line-height: 40px;
 }
 
 #header #headerText1 {
@@ -174,8 +192,10 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: center;
   width: 80%;
+  gap: 40px;
+  padding-bottom: 40px;
 }
 
 #partners #partnersContainer p {
@@ -201,6 +221,11 @@ body {
 
 #partners #partnersContainer #partnerFour {
   font-family: "Oswald", sans-serif;
+}
+
+#partners #partnersContainer #partnerFive {
+  font-family: "arial", sans-serif;
+  align-self: center;
 }
 
 #mainOrganization {
@@ -332,7 +357,7 @@ body {
 
 #featuredCardsContainer {
   margin-top: 30px;
-  gap: 20px;
+  gap: 40px;
 }
 
 #featuredCardsContainer section {
@@ -355,4 +380,9 @@ body {
   color: #ec5242;
   font-weight: 600;
   font-style: italic;
+}
+
+#mainLogo {
+  width: 300px;
+  padding: 30px;
 }

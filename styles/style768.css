@@ -1,5 +1,5 @@
 body {
-  background-position-y: 0;
+  background-position-y: -133px;
 }
 
 #mainContainer {
@@ -10,7 +10,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 7px;
+  gap: 3px;
 }
 
 #mainSelector .mainCard {
@@ -21,6 +21,10 @@ body {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
+}
+
+#mainSelector {
+  padding: 60px 120px 100px 120px;
 }
 
 #mainSelector .center {
@@ -93,6 +97,7 @@ body {
 }
 
 #images {
+  padding-top: 35px;
   display: -webkit-box;
   display: flex;
   gap: 20px;
@@ -108,4 +113,17 @@ body {
   -ms-grid-columns: auto auto;
   grid-template-columns: auto auto;
   margin-bottom: 35px;
+}
+
+#header {
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+#headerText2 {
+  text-align: center;
+}
+
+p {
+  max-width: 500px;
 }
