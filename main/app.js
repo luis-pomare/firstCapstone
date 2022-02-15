@@ -1,35 +1,35 @@
 //  Main menu interactions
 //  Extract hamburguer menu icon object from DOM
-const menuIcon = document.getElementById('menuIcon');
+const menuIcon = document.getElementById("menuIcon");
 
 //  Create menu container
-const dynamicNav = document.createElement('div'); // Menu container
-dynamicNav.id = 'dynamicNav';
+const dynamicNav = document.createElement("div"); // Menu container
+dynamicNav.id = "dynamicNav";
 
 //  Create closer icon
-const closerIcon = document.createElement('img');
-closerIcon.id = 'closerIcon';
-closerIcon.src = '../images/closerMenuIcon.png';
-closerIcon.alt = 'Closer Icon';
+const closerIcon = document.createElement("img");
+closerIcon.id = "closerIcon";
+closerIcon.src = "../images/closerMenuIcon.png";
+closerIcon.alt = "Closer Icon";
 
 // Create Links to the sections of the page
-const firstMenuElement = document.createElement('a');
-const secondMenuElement = document.createElement('a');
-const thirdMenuElement = document.createElement('a');
-const fourthMenuElement = document.createElement('a');
-const fifthMenuElement = document.createElement('a');
+const firstMenuElement = document.createElement("a");
+const secondMenuElement = document.createElement("a");
+const thirdMenuElement = document.createElement("a");
+const fourthMenuElement = document.createElement("a");
+const fifthMenuElement = document.createElement("a");
 
-firstMenuElement.innerText = 'About';
-secondMenuElement.innerText = 'Program';
-thirdMenuElement.innerText = 'Join';
-fourthMenuElement.innerText = 'Sponsors';
-fifthMenuElement.innerText = 'News';
-firstMenuElement.target = '-blank';
-firstMenuElement.href = 'aboutPage.html';
-secondMenuElement.href = 'index.html';
-thirdMenuElement.href = '#footerIcon';
-fourthMenuElement.href = '#footerIcon';
-fifthMenuElement.href = '#footerIcon';
+firstMenuElement.innerText = "About";
+secondMenuElement.innerText = "Program";
+thirdMenuElement.innerText = "Join";
+fourthMenuElement.innerText = "Sponsors";
+fifthMenuElement.innerText = "News";
+firstMenuElement.target = "-blank";
+firstMenuElement.href = "aboutPage.html";
+secondMenuElement.href = "index.html";
+thirdMenuElement.href = "#footerIcon";
+fourthMenuElement.href = "#footerIcon";
+fifthMenuElement.href = "#footerIcon";
 
 //  Apend menu elements to nav container
 dynamicNav.appendChild(closerIcon);
@@ -49,98 +49,92 @@ function deactiveMenu() {
 }
 
 // Listeners to nav elements interactions
-menuIcon.addEventListener('click', activeMenu);
-closerIcon.addEventListener('click', deactiveMenu);
-firstMenuElement.addEventListener('click', deactiveMenu);
-secondMenuElement.addEventListener('click', deactiveMenu);
-thirdMenuElement.addEventListener('click', deactiveMenu);
-fourthMenuElement.addEventListener('click', deactiveMenu);
-fifthMenuElement.addEventListener('click', deactiveMenu);
+menuIcon.addEventListener("click", activeMenu);
+closerIcon.addEventListener("click", deactiveMenu);
+firstMenuElement.addEventListener("click", deactiveMenu);
+secondMenuElement.addEventListener("click", deactiveMenu);
+thirdMenuElement.addEventListener("click", deactiveMenu);
+fourthMenuElement.addEventListener("click", deactiveMenu);
+fifthMenuElement.addEventListener("click", deactiveMenu);
 
 // Featured speakers section
 //  Objects declaration
-const firstSpeaker = {
-  Photo: '../images/featuredImageOne.png',
-  Name: 'First Speaker',
-  Background: 'First background',
-  Review: 'First lorem ipsum common dole',
-};
-const secondSpeaker = {
-  Photo: '../images/featuredImageTwo.png',
-  Name: 'Second Speaker',
-  Background: 'Second background',
-  Review: 'Second lorem ipsum common dole',
-};
-const thirdSpeaker = {
-  Photo: '../images/featuredImageThree.png',
-  Name: 'Third Speaker',
-  Background: 'Third background',
-  Review: 'Third lorem ipsum common dole',
-};
-const fourthSpeaker = {
-  Photo: '../images/featuredImageFour.png',
-  Name: 'Fourth Speaker',
-  Background: 'Fourth background',
-  Review: 'Fourth lorem ipsum common dole',
-};
-const fifthSpeaker = {
-  Photo: '../images/featuredImageFive.png',
-  Name: 'Fifth Speaker',
-  Background: 'Fifth background',
-  Review: 'Fifth lorem ipsum common dole',
-};
-const sixthtSpeaker = {
-  Photo: '../images/featuredImagesix.png',
-  Name: 'Sixth Speaker',
-  Background: 'Sixth background',
-  Review: 'Sixth lorem ipsum common dole',
-};
 
 const speakerArray = [
-  firstSpeaker,
-  secondSpeaker,
-  thirdSpeaker,
-  fourthSpeaker,
-  fifthSpeaker,
-  sixthtSpeaker,
+  {
+    Photo: "../images/featuredImageOne.png",
+    Name: "First Speaker",
+    Background: "First background",
+    Review: "First lorem ipsum common dole",
+  },
+  {
+    Photo: "../images/featuredImageTwo.png",
+    Name: "Second Speaker",
+    Background: "Second background",
+    Review: "Second lorem ipsum common dole",
+  },
+  {
+    Photo: "../images/featuredImageThree.png",
+    Name: "Third Speaker",
+    Background: "Third background",
+    Review: "Third lorem ipsum common dole",
+  },
+  {
+    Photo: "../images/featuredImageFour.png",
+    Name: "Fourth Speaker",
+    Background: "Fourth background",
+    Review: "Fourth lorem ipsum common dole",
+  },
+  {
+    Photo: "../images/featuredImageFive.png",
+    Name: "Fifth Speaker",
+    Background: "Fifth background",
+    Review: "Fifth lorem ipsum common dole",
+  },
+  {
+    Photo: "../images/featuredImagesix.png",
+    Name: "Sixth Speaker",
+    Background: "Sixth background",
+    Review: "Sixth lorem ipsum common dole",
+  },
 ];
 
 // Get elemnts from HTML file
 //  images
-const featuredImageOne = document.getElementById('featuredImageOne');
-const featuredImageTwo = document.getElementById('featuredImageTwo');
-const featuredImageThree = document.getElementById('featuredImageThree');
-const featuredImageFour = document.getElementById('featuredImageFour');
-const featuredImageFive = document.getElementById('featuredImageFive');
-const featuredImageSix = document.getElementById('featuredImageSix');
+const featuredImageOne = document.getElementById("featuredImageOne");
+const featuredImageTwo = document.getElementById("featuredImageTwo");
+const featuredImageThree = document.getElementById("featuredImageThree");
+const featuredImageFour = document.getElementById("featuredImageFour");
+const featuredImageFive = document.getElementById("featuredImageFive");
+const featuredImageSix = document.getElementById("featuredImageSix");
 
 //  Speakers names
-const featuredTittleOne = document.getElementById('featuredTittleOne');
-const featuredTittleTwo = document.getElementById('featuredTittleTwo');
-const featuredTittleThree = document.getElementById('featuredTittleThree');
-const featuredTittleFour = document.getElementById('featuredTittleFour');
-const featuredTittleFive = document.getElementById('featuredTittleFive');
-const featuredTittleSix = document.getElementById('featuredTittleSix');
+const featuredTittleOne = document.getElementById("featuredTittleOne");
+const featuredTittleTwo = document.getElementById("featuredTittleTwo");
+const featuredTittleThree = document.getElementById("featuredTittleThree");
+const featuredTittleFour = document.getElementById("featuredTittleFour");
+const featuredTittleFive = document.getElementById("featuredTittleFive");
+const featuredTittleSix = document.getElementById("featuredTittleSix");
 
 //  Speakers background
-const featuredSubtittleOne = document.getElementById('featuredSubtittleOne');
-const featuredSubtittleTwo = document.getElementById('featuredSubtittleTwo');
+const featuredSubtittleOne = document.getElementById("featuredSubtittleOne");
+const featuredSubtittleTwo = document.getElementById("featuredSubtittleTwo");
 const featuredSubtittleThree = document.getElementById(
-  'featuredSubtittleThree',
+  "featuredSubtittleThree"
 );
-const featuredSubtittleFour = document.getElementById('featuredSubtittleFour');
-const featuredSubtittleFive = document.getElementById('featuredSubtittleFive');
-const featuredSubtittleSix = document.getElementById('featuredSubtittleSix');
+const featuredSubtittleFour = document.getElementById("featuredSubtittleFour");
+const featuredSubtittleFive = document.getElementById("featuredSubtittleFive");
+const featuredSubtittleSix = document.getElementById("featuredSubtittleSix");
 
 //  Speakers review
-const featuredParagraphOne = document.getElementById('featuredParagraphOne');
-const featuredParagraphTwo = document.getElementById('featuredParagraphTwo');
+const featuredParagraphOne = document.getElementById("featuredParagraphOne");
+const featuredParagraphTwo = document.getElementById("featuredParagraphTwo");
 const featuredParagraphThree = document.getElementById(
-  'featuredParagraphThree',
+  "featuredParagraphThree"
 );
-const featuredParagraphFour = document.getElementById('featuredParagraphFour');
-const featuredParagraphFive = document.getElementById('featuredParagraphFive');
-const featuredParagraphSix = document.getElementById('featuredParagraphSix');
+const featuredParagraphFour = document.getElementById("featuredParagraphFour");
+const featuredParagraphFive = document.getElementById("featuredParagraphFive");
+const featuredParagraphSix = document.getElementById("featuredParagraphSix");
 
 //  Give the information to the page
 // Images
