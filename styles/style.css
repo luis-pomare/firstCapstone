@@ -61,7 +61,7 @@ body {
 }
 
 #header {
-  padding: 0px 13px 0 13px;
+  padding: 0px 13px 0px 13px;
 }
 
 #header #headerMainH2 {
@@ -82,7 +82,6 @@ body {
   background-position-y: -450px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 40px;
 }
 
 #header #aboutHeaderTittle {
