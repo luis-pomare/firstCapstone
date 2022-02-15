@@ -61,7 +61,8 @@ body {
 }
 
 #header {
-  padding: 0px 13px 0px 13px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 #header #headerMainH2 {
@@ -92,7 +93,6 @@ body {
   padding-top: 17px;
   padding-bottom: 55px;
   font-size: 35px;
-  line-height: 40px;
 }
 
 #header #headerText1 {
