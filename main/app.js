@@ -9,7 +9,7 @@ dynamicNav.id = 'dynamicNav';
 //  Create closer icon
 const closerIcon = document.createElement('img');
 closerIcon.id = 'closerIcon';
-closerIcon.src = 'images/closerMenuIcon.png';
+closerIcon.src = '../images/closerMenuIcon.png';
 closerIcon.alt = 'Closer Icon';
 
 // Create Links to the sections of the page
@@ -60,37 +60,37 @@ fifthMenuElement.addEventListener('click', deactiveMenu);
 // Featured speakers section
 //  Objects declaration
 const firstSpeaker = {
-  Photo: 'images/featuredImageOne.png',
+  Photo: '../images/featuredImageOne.png',
   Name: 'First Speaker',
   Background: 'First background',
   Review: 'First lorem ipsum common dole',
 };
 const secondSpeaker = {
-  Photo: 'images/featuredImageTwo.png',
+  Photo: '../images/featuredImageTwo.png',
   Name: 'Second Speaker',
   Background: 'Second background',
   Review: 'Second lorem ipsum common dole',
 };
 const thirdSpeaker = {
-  Photo: 'images/featuredImageThree.png',
+  Photo: '../images/featuredImageThree.png',
   Name: 'Third Speaker',
   Background: 'Third background',
   Review: 'Third lorem ipsum common dole',
 };
 const fourthSpeaker = {
-  Photo: 'images/featuredImageFour.png',
+  Photo: '../images/featuredImageFour.png',
   Name: 'Fourth Speaker',
   Background: 'Fourth background',
   Review: 'Fourth lorem ipsum common dole',
 };
 const fifthSpeaker = {
-  Photo: 'images/featuredImageFive.png',
+  Photo: '../images/featuredImageFive.png',
   Name: 'Fifth Speaker',
   Background: 'Fifth background',
   Review: 'Fifth lorem ipsum common dole',
 };
 const sixthtSpeaker = {
-  Photo: 'images/featuredImageSix.png',
+  Photo: '../images/featuredImagesix.png',
   Name: 'Sixth Speaker',
   Background: 'Sixth background',
   Review: 'Sixth lorem ipsum common dole',
